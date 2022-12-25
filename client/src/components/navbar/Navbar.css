@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+.navbar{
+    background: rgb(28, 26, 26, 0.2);
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    justify-content: center;
+    font-family: 'Inter';
+}
+.images{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.sail{
+    width: 144px;
+    height: 64px;
+}
+.yearbook{
+    width: 183px;
+    height: 60px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.links a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.hamburg,.menu{
+    display: none;
+}
+.search-box{
+    width: 390px;
+    height: 44px;
+    padding: 0px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    align-self: center;
+}
+.search-icon{
+    position: absolute;
+    right: 15%;
+    width: 16px;
+    height: 16px;
+}
+.search-box:focus{
+    outline: none;
+}
+.log-out{
+    width: 84px;
+    height: 33px;
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bolder;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+}
+.user-img{
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+}
+@media screen and (max-width:1200px) and (min-width:1000px){
+    .links{
+        gap: 25px;
+    }
+    .sail{
+        width: 100px;
+        height: 49.33px;
+    }
+    .yearbook{
+        width: 145.5px;
+        height: 48px;
+    }
+    .links a{
+        font-size: 14px;
+    }
+    .hamburg,.menu{
+        display: none;
+    }
+    .search-box{
+        width: 200px;
+        height: 40px;
+    }
+    .search-icon{
+        right: 18%;
+    }
+    .log-out{
+        width: 75px;
+        height: 28px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:600px){
+    .sail{
+        width: 65px;
+        height: 28.9px;
+    }
+    .yearbook{
+        height: 29px;
+        width: 88.45px;
+    }
+    .images{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar{
+        height: 70px;
+        gap: 3%;
+    }
+    .links{
+        font-size: 13px;
+        gap: 15px;
+    }
+    .hamburg,.menu{
+        display: none;
+    }
+    .search-box{
+        height: 37px;
+        width: 160px;
+        font-size: 13px;
+        padding: 0px 13px;
+    }
+    .search-icon{
+        right: 24%;
+    }
+    .log-out{
+        width: 70px;
+        height: 26px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .sail{
+        width: 65px;
+        height: 28.9px;
+    }
+    .yearbook{
+        height: 29px;
+        width: 88.45px;
+    }
+    .images{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar{
+        height: 70px;
+        gap: 4.3%;
+    }
+    .links, .in{
+        display: none;
+    }
+    .hamburg{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        right: 0.2rem;
+        padding: 0px 18px;
+        border-radius: 15px;
+        border: 1px solid gray;
+        background-color: #FFFFFF;
+    }
+    .hamburg::before{
+        content: '';
+        position: absolute;
+        top: -0.7rem;
+        right: 1.1rem;
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+        background-color: white;
+        border-left: 1px solid gray;
+        border-top: 1px solid gray;
+    }
+    .hamburg ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding-left: 4px;
+        gap: 8px;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    .menu{
+        display: block;
+        width:26px;
+        height: 26px;
+    }
+    .search-box{
+        height: 37px;
+        width: 150px;
+        font-size: 13px;
+        padding: 0px 13px;
+    }
+    .search-icon{
+        right: 32%;
+    }
+    .log-out{
+        width: 70px;
+        height: 26px;
+        font-size: 12px;
+    }
+}
