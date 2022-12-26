@@ -1,10 +1,8 @@
 // import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
-import Homepage from './components/home/Homepage';
-import LandingPage from './pages/LandingPage';
-
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import Navbar from "./components/navbar/Navbar";
+import Homepage from "./pages/homepage/Homepage";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
@@ -12,11 +10,11 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <LandingPage/>
+            <LandingPage />
           </Route>
           <Route exact path="/home">
-            <Navbar/>
-            <Homepage/>
+            <Homepage />
+            {/* <Navbar /> */}
           </Route>
         </Switch>
       </div>
