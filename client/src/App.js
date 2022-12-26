@@ -1,8 +1,9 @@
 // import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
+import Homepage from './components/home/Homepage';
 import LandingPage from './pages/LandingPage';
-import Home from './pages/Home';
+
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           </Route>
           <Route exact path="/home">
             <Navbar/>
-            <Home/>
+            <Homepage/>
           </Route>
         </Switch>
       </div>

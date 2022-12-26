@@ -1,4 +1,4 @@
 the sub-folders in components folder contain all page specific components.
-Ex: a folder named "home" will contain all react components used in creating the homep age.
+Ex: a folder named "home" will contain all react components used in creating the homepage.
 Similarly make other sub-folders according to your need. 
 If a particular component is used all over in the app, keep its file directly inside the components folder only.
