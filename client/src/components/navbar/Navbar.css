@@ -13,51 +13,101 @@
     justify-content: center;
     font-family: 'Inter';
 }
-.images{
+.nav-images{
     display: flex;
     align-items: center;
     gap: 2%;
 }
-.sail{
+.nav-sail{
     width: 144px;
     height: 64px;
 }
-.yearbook{
+.nav-yearbook{
     width: 183px;
     height: 60px;
 }
-.links{
+.nav-links{
     display: flex;
     align-items: center;
     gap: 40px;
 }
-.links a{
+.nav-links a{
     text-decoration: none;
     color: #FFFFFF;
-    font-weight: bolder;
+    /* font-weight: bolder; */
 }
-.hamburg,.menu{
+.nav-links a:hover{
+    font-weight: bold;
+    /* text-decoration: underline;
+    text-underline-offset: 6px; */
+    /* transition: .2s linear; */
+}
+.nav-hamburg,.nav-menu{
     display: none;
 }
-.search-box{
+
+.nav-hamburg2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4.8rem;
+    right: 0.7rem;
+    padding: 0px 8px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: #e9e7e7;
+}
+.nav-hamburg2::before{
+    content: '';
+    position: absolute;
+    top: -0.7rem;
+    right: 0.6rem;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: #e9e7e7;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.nav-hamburg2 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4px;
+    /* gap: 8px; */
+}
+.nav-hamburg2 ul a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 5px 8px;
+}
+.nav-hamburg2 ul a:hover{
+    background-color: #FFFFFF;
+}
+.nav-search-cont{
+    display: flex;
+    align-items: center;
+}
+.nav-search-box{
     width: 390px;
     height: 44px;
-    padding: 0px 20px;
+    padding: 0px 25px;
     font-size: 14px;
     border-radius: 4px;
     border: none;
     align-self: center;
 }
-.search-icon{
-    position: absolute;
-    right: 15%;
+.nav-search-icon{
+    position: relative;
+    right: 25px;
     width: 16px;
     height: 16px;
 }
-.search-box:focus{
+.nav-search-box:focus{
     outline: none;
 }
-.log-out{
+.nav-log-out{
     width: 84px;
     height: 33px;
     background-color: #1D4ED8;
@@ -67,39 +117,50 @@
     border-radius: 4px;
     border: none;
     text-decoration: none;
+    cursor: pointer;
 }
-.user-img{
+.nav-log-out:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 10px 10px 0 rgba(0,0,0,0.19);
+    transition: .2s ease-out;
+}
+.nav-user-img{
     width: 40px;
     height: 40px;
-    
+    cursor: pointer;
     border-radius: 50%;
 }
+.nav-user-img:hover{
+    outline: #FFFFFF solid 2px;
+}
 @media screen and (max-width:1200px) and (min-width:1000px){
-    .links{
+    .nav-links{
         gap: 25px;
     }
-    .sail{
+    .nav-sail{
         width: 100px;
         height: 49.33px;
     }
-    .yearbook{
+    .nav-yearbook{
         width: 145.5px;
         height: 48px;
     }
-    .links a{
+    .nav-links a{
         font-size: 14px;
     }
-    .hamburg,.menu{
+    .nav-hamburg,.nav-menu{
         display: none;
     }
-    .search-box{
+    .nav-hamburg2{
+        right: 0.2rem;
+    }
+    .nav-search-box{
         width: 200px;
         height: 40px;
     }
-    .search-icon{
-        right: 18%;
+    .nav-search-icon{
+        /* right: 18%; */
     }
-    .log-out{
+    .nav-log-out{
         width: 75px;
         height: 28px;
         font-size: 12px;
@@ -107,88 +168,94 @@
 }
 
 @media screen and (max-width:1000px) and (min-width:600px){
-    .sail{
+    .nav-sail{
         width: 65px;
         height: 28.9px;
     }
-    .yearbook{
+    .nav-yearbook{
         height: 29px;
         width: 88.45px;
     }
-    .images{
+    .nav-images{
         flex-direction: column;
         align-items: flex-start;
     }
     .navbar{
         height: 70px;
-        gap: 3%;
+        gap: 2.5%;
     }
-    .links{
+    .nav-links{
         font-size: 13px;
         gap: 15px;
     }
-    .hamburg,.menu{
+    .nav-hamburg,.nav-menu{
         display: none;
     }
-    .search-box{
+    .nav-hamburg2{
+        right: 0.2rem;
+    }
+    .nav-search-box{
         height: 37px;
         width: 160px;
         font-size: 13px;
-        padding: 0px 13px;
+        padding: 0px 25px;
     }
     .search-icon{
-        right: 24%;
+        /* right: 24%; */
     }
-    .log-out{
+    .nav-log-out{
         width: 70px;
         height: 26px;
         font-size: 12px;
     }
 }
 @media screen and (max-width: 600px) {
-    .sail{
+    .nav-sail{
         width: 65px;
         height: 28.9px;
     }
-    .yearbook{
+    .nav-yearbook{
         height: 29px;
         width: 88.45px;
     }
-    .images{
+    .nav-images{
         flex-direction: column;
         align-items: flex-start;
     }
     .navbar{
         height: 70px;
-        gap: 4.3%;
+        gap: 3.8%;
     }
-    .links, .in{
+    .nav-links, .nav-in{
         display: none;
     }
-    .hamburg{
+    .nav-hamburg2{
+        right: 3.5rem;
+    }
+    .nav-hamburg{
         display: flex;
         flex-direction: column;
         position: absolute;
         top: 4rem;
-        right: 0.2rem;
-        padding: 0px 18px;
-        border-radius: 15px;
+        right: 0.5rem;
+        padding: 0px 8px;
+        border-radius: 8px;
         border: 1px solid gray;
-        background-color: #FFFFFF;
+        background-color: #e9e7e7;
     }
-    .hamburg::before{
+    .nav-hamburg::before{
         content: '';
         position: absolute;
         top: -0.7rem;
-        right: 1.1rem;
+        right: 0.6rem;
         width: 20px;
         height: 20px;
         transform: rotate(45deg);
-        background-color: white;
+        background-color: #e9e7e7;
         border-left: 1px solid gray;
         border-top: 1px solid gray;
     }
-    .hamburg ul{
+    .nav-hamburg ul{
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -199,21 +266,22 @@
         text-decoration: none;
         color: #000;
     }
-    .menu{
+    .nav-menu{
         display: block;
         width:26px;
         height: 26px;
     }
-    .search-box{
+    .nav-search-box{
         height: 37px;
-        width: 150px;
+        width: 130px;
         font-size: 13px;
-        padding: 0px 13px;
+        padding-right: 27px;
+        padding-left: 15px;
     }
     .search-icon{
-        right: 32%;
+        /* right: 32%; */
     }
-    .log-out{
+    .nav-log-out{
         width: 70px;
         height: 26px;
         font-size: 12px;
