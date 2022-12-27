@@ -1,0 +1,74 @@
+{
+    "profile": [{
+        "id": 1,
+        "name": "Aarti Sharma",
+        "course": "B.Tech",
+        "branch": "Electronics and Communication Engineering",
+        "passout_year": "2018",
+        "insta_handle": "",
+        "linkdin_handle": "",
+        "bio": "'Most of those who have succeeded in life can trace their success back to the essential education they obtained from parents, teachers and/ or friends..........'",
+        "questions":[
+            {
+                "ques": "Hello, How are you?", 
+                "ans": "I'm doing fine, enjoying college life, What about you....."
+            },
+            {
+                "ques": "Hello, How are you?", 
+                "ans": "I'm doing fine, enjoying college life, What about you....."
+            },
+            {
+                "ques": "Hello, How are you?", 
+                "ans": "I'm doing fine, enjoying college life, What about you....."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Aarti Sharma",
+        "course": "B.Tech",
+        "branch": "Electronics and Communication Engineering",
+        "passout_year": "2018",
+        "insta_handle": "",
+        "linkdin_handle": "",
+        "bio": "'Most of those who have succeeded in life can trace their success back to the essential education they obtained from parents, teachers and/ or friends..........'",
+        "questions":[
+            {
+                "ques": "Hello, How are you?", 
+                "ans": "I'm doing fine, enjoying college life, What about you....."
+            },
+            {
+                "ques": "Hello, How are you?", 
+                "ans": "I'm doing fine, enjoying college life, What about you....."
+            },
+            {
+                "ques": "Hello, How are you?", 
+                "ans": "I'm doing fine, enjoying college life, What about you....."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Aarti Sharma",
+        "course": "B.Tech",
+        "branch": "Electronics and Communication Engineering",
+        "passout_year": "2018",
+        "insta_handle": "",
+        "linkdin_handle": "",
+        "bio": "'Most of those who have succeeded in life can trace their success back to the essential education they obtained from parents, teachers and/ or friends..........'",
+        "questions":[
+            {
+                "ques": "Hello, How are you?", 
+                "ans": "I'm doing fine, enjoying college life, What about you....."
+            },
+            {
+                "ques": "Hello, How are you?", 
+                "ans": "I'm doing fine, enjoying college life, What about you....."
+            },
+            {
+                "ques": "Hello, How are you?", 
+                "ans": "I'm doing fine, enjoying college life, What about you....."
+            }
+        ]
+    }]
+}

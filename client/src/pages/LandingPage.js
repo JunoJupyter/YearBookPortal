@@ -1,9 +1,13 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
-    return ( 
-        <Link to="/home">Home Page</Link>
-     );
+    return (
+        <div>
+            <Link to="/home">Home Page</Link>
+            <br/>
+            <Link to="/MyProfile">My Profile</Link>
+        </div>
+    );
 }
- 
+
 export default LandingPage;

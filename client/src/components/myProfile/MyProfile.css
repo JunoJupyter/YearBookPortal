@@ -1,0 +1,169 @@
+.MyProfileRight {
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.MyProfileR_a {
+    position: absolute;
+    width: 62%;
+    margin-right: 32px;
+    top: 71px;
+    left: 35%;
+}
+
+.MyProfile_Left{
+    position: absolute;
+    top: 71px;
+}
+
+.MyProfileR_Search {
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+}
+
+.MyProfileR_card_hr {
+    border: 1px solid white;
+}
+
+.ProfileR_Search_input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0px;
+    padding-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.ProfileR_Search_input:focus-visible{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.ProfileR_Search_input_i {
+    height: 33px;
+    position: relative;
+    right: 30px;
+}
+
+.MyProfileR_un {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+}
+
+.MyProfileR_t_h {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 125px;
+    padding-right: 125px;
+}
+
+.MyProfileR_c {
+    height: 70vh;
+    margin-left: 18px;
+    margin-top: 20px;
+}
+
+.MyProfileR_c_a {
+    /* background-color: grey; */
+    overflow-y: scroll;
+    /* scrollbar-color: #A685FB white; */
+    scrollbar-width: 5px;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 12px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: #A685FB;
+}
+
+.MyProfileR_card {
+    display: flex;
+    height: auto;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.MyProfileR_card_image {
+    display: block;
+    width: 700px;
+}
+
+.MyProfileR_card_detail {
+    margin: 10px;
+}
+
+.MyProfileR_card_card_name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+.MyProfileR_card_card_banch {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 10px;
+}
+
+.MyProfileR_card_img {
+    height: 156px;
+    width: 156px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.MyProfileR_card_card_testimony {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 20px;
+}
+
+body{
+    background: radial-gradient(
+        103.91% 192.47% at 97.33% 0%,
+        #ffedb6 0%,
+        #cf93ff 70.31%,
+        #bfa8ff 100%
+    );
+    height: 120vh;
+    overflow-y: hidden;
+}
+
+
+  
