@@ -1,0 +1,24 @@
+{
+  "announcements": [
+    {
+      "id": "1",
+      "body": "This is a sample announcement body with ",
+      "link": "http://www.google.com"
+    },
+    {
+      "id": "2",
+      "body": "This is a sample announcement body with ",
+      "link": "http://www.google.com"
+    },
+    {
+      "id": "3",
+      "body": "This is a sample announcement body with ",
+      "link": "http://www.google.com"
+    },
+    {
+      "id": "4",
+      "body": "This is a sample announcement body with ",
+      "link": "http://www.google.com"
+    }
+  ]
+}
