@@ -1,4 +1,3 @@
-import './Myself.css';
 import  profile_photo from '../../assets/myprofile/profile_photo.png';
 import  instagram from '../../assets/myprofile/Instagram.png';
 import  linkdin from '../../assets/myprofile/Linkdin.png';

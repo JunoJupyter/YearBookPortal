@@ -1,4 +1,3 @@
-import './Question.css'
 import userData from '../../database/profile.json'
 import ans_logo from '../../assets/myprofile/ans_logo.png'
 
