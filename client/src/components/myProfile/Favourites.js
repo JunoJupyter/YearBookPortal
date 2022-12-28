@@ -11,7 +11,7 @@ function Favourites() {
               <React.Fragment key={e.id}>
                 <div className='MyProfileR_card' >
                   <div className='MyProfileR_card_image'>
-                    <img src={require('../../assets/myprofile/index2.jpeg')} className='MyProfileR_card_img' />
+                    <img alt='' src={require('../../assets/myprofile/index2.jpeg')} className='MyProfileR_card_img' />
                   </div>
                   <div className='MyProfileR_card_detail'>
                     <div className='MyProfileR_card_card_name'>

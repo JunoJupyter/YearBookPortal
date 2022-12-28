@@ -11,6 +11,7 @@ function MyProfileTestimonials() {
         case 0: temp = <ForYou />; break;
         case 1: temp = <ByYou />; break;
         case 2: temp = <Favourites />; break;
+        default: break;
     }
     const u1 = useRef()
     const u2 = useRef()
@@ -23,6 +24,7 @@ function MyProfileTestimonials() {
             case 0: u1.current.className = 'MyProfileR_un'; break;
             case 1: u2.current.className = 'MyProfileR_un'; break;
             case 2: u3.current.className = 'MyProfileR_un'; break;
+            default: break;
         }
         myFunction();
     }
@@ -40,18 +42,18 @@ function MyProfileTestimonials() {
             <div class="topnav">
                 <a href="#home" class="active">Testimonials</a>
                 <div id="myLinks">
-                    <a onClick={() => { if (dis != 0) setdis(0) }} ref={u1}>For You</a>
-                    <a onClick={() => { if (dis != 1) setdis(1) }} ref={u2}>By You</a>
-                    <a onClick={() => { if (dis != 2) setdis(2) }} ref={u3}>Favourite</a>
+                    <a onClick={() => { if (dis !== 0) setdis(0) }} ref={u1}>For You</a>
+                    <a onClick={() => { if (dis !== 1) setdis(1) }} ref={u2}>By You</a>
+                    <a onClick={() => { if (dis !== 2) setdis(2) }} ref={u3}>Favourite</a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onClick={() => myFunction()}>
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
             <div className='MyProfileR_t_h'>
-                <div onClick={() => { if (dis != 0) setdis(0) }} ref={u1}>For You</div>
-                <div onClick={() => { if (dis != 1) setdis(1) }} ref={u2}>By You</div>
-                <div onClick={() => { if (dis != 2) setdis(2) }} ref={u3}>Favourite</div>
+                <div onClick={() => { if (dis !== 0) setdis(0) }} ref={u1}>For You</div>
+                <div onClick={() => { if (dis !== 1) setdis(1) }} ref={u2}>By You</div>
+                <div onClick={() => { if (dis !== 2) setdis(2) }} ref={u3}>Favourite</div>
             </div>
             <div className='MyProfileR_Search'>
                 <input className='ProfileR_Search_input' placeholder='Search Testimonial' />
