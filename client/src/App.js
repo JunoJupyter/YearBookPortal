@@ -1,8 +1,8 @@
 // import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Homepage from './pages/homepage/Homepage';
-import LandingPage from './pages/LandingPage';
-import MyProfilePage from './pages/MyProfileRight';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Homepage from "./pages/homepage/Homepage";
+import LandingPage from "./pages/LandingPage";
+import MyProfilePage from "./pages/MyProfileRight";
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
           </Route>
           <Route exact path="/home">
             <Homepage />
-            {/* <Navbar /> */}
+            
           </Route>
           <Route exact path="/myprofile">
-            <MyProfilePage/>
+            <MyProfilePage />
           </Route>
         </Switch>
       </div>
