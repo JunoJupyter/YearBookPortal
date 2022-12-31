@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Homepage from './pages/homepage/Homepage';
 import LandingPage from './pages/LandingPage';
 import MyProfilePage from './pages/MyProfileRight';
+import Leaderboard from './pages/Leaderboard';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route exact path="/myprofile">
             <MyProfilePage/>
+          </Route>
+          <Route exact path='/leaderboard'>
+            <Leaderboard/>
           </Route>
         </Switch>
       </div>

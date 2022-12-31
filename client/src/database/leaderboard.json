@@ -1,0 +1,76 @@
+{
+    "leaderboard":[
+        {
+            "id":"0",
+            "name":"Akshay Bhaiya",
+            "votes":"28",
+            "branch":"Mechanical Engineering",
+            "degree":"BTech",
+            "year":"2020"
+        },
+        {
+            "id":"1",
+            "name":"Ramesh Bhaiya",
+            "votes":"22",
+            "branch":"Mechanical Engineering",
+            "degree":"BTech",
+            "year":"2020"
+        },
+        {
+            "id":"2",
+            "name":"Praveen Bhaiya",
+            "votes":"20",
+            "branch":"Mechanical Engineering",
+            "degree":"BTech",
+            "year":"2020"
+        },
+        {
+            "id":"3",
+            "name":"Suresh Bhaiya",
+            "votes":"12",
+            "branch":"Mechanical Engineering",
+            "degree":"BTech",
+            "year":"2020"
+        },
+        {
+            "id":"4",
+            "name":"Akshit Bhaiya",
+            "votes":"18",
+            "branch":"Mechanical Engineering",
+            "degree":"BTech",
+            "year":"2020"
+        },
+        {
+            "id":"5",
+            "name":"Harsh Bhaiya",
+            "votes":"8",
+            "branch":"Mechanical Engineering",
+            "degree":"BTech",
+            "year":"2020"
+        },
+        {
+            "id":"6",
+            "name":"Sumit Bhaiya",
+            "votes":"2",
+            "branch":"Mechanical Engineering",
+            "degree":"BTech",
+            "year":"2020"
+        },
+        {
+            "id":"7",
+            "name":"Prateek Bhaiya",
+            "votes":"38",
+            "branch":"Mechanical Engineering",
+            "degree":"BTech",
+            "year":"2020"
+        },
+        {
+            "id":"8",
+            "name":"Mohan Bhaiya",
+            "votes":"29",
+            "branch":"Mechanical Engineering",
+            "degree":"BTech",
+            "year":"2020"
+        }
+    ]
+}
