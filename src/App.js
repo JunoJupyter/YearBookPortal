@@ -9,21 +9,21 @@ import Another from './components/carousel/another';
 
 function App() {
   return (
-    // <Router>
-    //   <div className="App">
-    //     <Switch>
-    //       <Route exact path="/">
-    //         <LandingPage/>
-    //       </Route>
-    //       <Route exact path="/home">
-    //         <Navbar/>
-    //         <Homepage/>
-    //       </Route>
-    //     </Switch>
-    //   </div>
-    // </Router>
-   <Carousel></Carousel>
-    // <Another></Another>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <LandingPage/>
+          </Route>
+          <Route exact path="/home">
+            <Navbar/>
+            <Homepage/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  //  <Carousel></Carousel>
+   
   );
 }
 
