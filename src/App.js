@@ -22,7 +22,7 @@ function App() {
     //     </Switch>
     //   </div>
     // </Router>
-    <Carousel></Carousel>
+   <Carousel></Carousel>
     // <Another></Another>
   );
 }

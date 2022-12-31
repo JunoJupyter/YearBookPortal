@@ -12,42 +12,42 @@ import data from "./TemplateData.json";
 import { Pagination, Navigation } from "swiper";
 
 function Carousel() {
-  const [searchInput, setSearchInput] = useState("");
-
+//   const [searchInput, setSearchInput] = useState("");
+  const [ Query,setQuery] = useState("");
   
+ console.log(data.filter(user=>user.title.toLowerCase().includes("gr")));
+//  const handleChange = (e) => {
+//    e.preventDefault();
+//    setSearchInput(e.target.value);
+//  };
+//  console.log(searchInput);
+//  if (searchInput.length > 0) {
+//   const arr = data.filter(val => val.title.includes(searchInput))
+//   arr.map((val) =>(
+//         <SwiperSlide>
+//           <Profile
+//               key={val.id}
+//               name = {val.title}  
+//           />
+//           </SwiperSlide>
+//            ))
  
- const handleChange = (e) => {
-   e.preventDefault();
-   setSearchInput(e.target.value);
- };
- console.log(searchInput);
- if (searchInput.length > 0) {
-  const arr = data.filter(val => val.title.includes(searchInput))
-  arr.map((val) =>(
-        <SwiperSlide>
-          <Profile
-              key={val.id}
-              name = {val.title}  
-          />
-          </SwiperSlide>
-           ))
-  //  arr.map(movie => return <Profile key={movie.Title} data={movie} />)
- }
+//  }
   
     return (
       <>
-      <div>
-      <input
-   type="search"
-   placeholder="Search here"
-   onChange={handleChange}
-   value={searchInput} />
-      {/* <div className="searchInput_Container">
-          <input id="searchInput" type="text" placeholder="Search here..." onChange={(event) => {
-            setSearchTerm(event.target.value);
-          }} />
-        </div> */}
-        <div>
+      <div className="carousel">
+      <div className="search">
+        <input
+          type="text"
+          placeholder="Search...."
+          className="Searchone"
+           onChange={(e) => setQuery(e.target.value)}
+        />
+        
+       
+      </div>
+        <div className="swipe" >
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -61,11 +61,11 @@ function Carousel() {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-       { data.map((val) =>(
+       { data.filter(user=>user.title.toLowerCase().includes(Query)).map((user) =>(
         <SwiperSlide>
           <Profile
-              key={val.id}
-              name = {val.title}  
+              key={user.id}
+              name = {user.title}  
           />
           </SwiperSlide>
        ))}

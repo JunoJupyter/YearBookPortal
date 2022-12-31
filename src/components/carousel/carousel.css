@@ -46,3 +46,16 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.carousel
+{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.search
+{
+  margin-top: -220px;
+  margin-left: -350px;
+}
