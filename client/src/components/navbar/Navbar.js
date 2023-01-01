@@ -31,22 +31,12 @@ const Navbar = () => {
                         <li><Link to="/testimonials">Testimonials</Link></li>
                         <li><Link to="/polls">Polls</Link></li>
                         <li><Link to="/leaderboard">Leaderboard</Link></li>
-                        <li><button className="nav-log-out">Log out</button></li>
+                        <li><button className="nav-log-out nav-out">Log out</button></li>
                     </ul>
                 </div>
                 
             }
-            {
-
-                userClick &&
-                <div className="nav-hamburg2">
-                    <ul>
-                        <li><Link to="/myprofile">My Profile</Link></li>
-                        <li><Link to="#">Hidden Testimonials</Link></li>
-                    </ul>
-                </div>
-
-            }
+            
             <div class="nav-search-cont">
                 <input type="text" className='nav-search-box' placeholder='Search for friend'/>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-search-icon">
@@ -61,6 +51,17 @@ const Navbar = () => {
                 );
                 setOpenMenu(false)
             }}  />
+            {
+
+                userClick &&
+                <div className="nav-hamburg2">
+                    <ul>
+                        <li><Link to="/myprofile">My Profile</Link></li>
+                        <li><Link to="#">Hidden Testimonials</Link></li>
+                    </ul>
+                </div>
+
+            }
             <img src={menu} alt="" className="nav-menu" onClick={() => {
                 setOpenMenu(
                     (prev) => !prev
