@@ -1,14 +1,13 @@
 import "./homepage.css";
 import CamImg from "../../assets/homepage/camerabg.png";
+import MegaphoneIcon from "../../assets/homepage/megaphoneIcon.svg";
 import Navbar from "../../components/navbar/Navbar";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Homepage() {
-  // console.log(data);
   let [data, setData] = useState(null);
   let [isPending, setIsPending] = useState(true);
-  // console.log(data);
 
   useEffect(() => {
     fetch("http://localhost:8000/announcements")
@@ -18,8 +17,7 @@ function Homepage() {
       .then((data) => {
         setData(data);
         setIsPending(false);
-        console.log("Hello World from homepage!");
-        // console.log(data);
+        
       });
   }, []);
 
@@ -38,6 +36,7 @@ function Homepage() {
             data.map((data) => (
               <div key={data.id} className="databody">
                 {data.id}. {data.body}
+                <img src={MegaphoneIcon} alt="" className="megaphoneicon" />
               </div>
             ))}
         </div>
