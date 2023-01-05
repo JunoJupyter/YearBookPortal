@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/myprofile">
             <MyProfilePage />
           </Route>
-          <Route>
+          <Route exact path="/leaderboard">
             <LeaderBoard/>
           </Route>
         </Switch>
