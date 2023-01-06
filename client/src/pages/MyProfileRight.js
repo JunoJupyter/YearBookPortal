@@ -5,19 +5,25 @@ import '../components/myProfile/MyProfile.css'
 import Myself from '../components/myProfile/Myself';
 import Question from '../components/myProfile/Question';
 import MyProfileTestimonials from '../components/myProfile/MyProfileTestimonials';
+import Popup from '../components/myProfile/Popup';
 
 function MyProfileRight() {
-
     return (
-        <div className='MyProfileRight'>
-            <Navbar />
-            <div className='MyProfile_Left'>
-                <Myself />
-                <Question />
+        <div className='myprofilefull'>
+            <div className='myprofilebody'>
+                <div className='MyProfileRight'>
+                    <Navbar />
+                    <div className='MyProfile_Left'>
+                        <Myself />
+                        <Question />
+                    </div>
+                        <MyProfileTestimonials/>
+                </div>
             </div>
-                <MyProfileTestimonials/>
+            <div className='edit_profile'>
+                <Popup />
+            </div>
         </div>
-
     )
 }
 
