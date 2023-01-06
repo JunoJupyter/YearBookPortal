@@ -9,7 +9,7 @@ app.post('/myprofile', (req, res)=>{
     // console.log(req.body.phone);
     // console.log(req.body.address);
     // console.log(req.body.bio);
-    console.log(req.body.answer);
+    // console.log(req.body.answer);
 });
 
 app.listen(3000, ()=>{
