@@ -55,6 +55,16 @@
   overflow-y: scroll;
 }
 
+.databody {
+  display: flex;
+}
+
+.megaphoneicon {
+  width: 1.3vw;
+  height: 1.5vw;
+  margin-left: 2%;
+}
+
 @media (max-width: 800px) and (min-width: 600px) {
   .announcement {
     min-height: 25vw;
@@ -71,7 +81,7 @@
 .para {
   color: black;
   padding-top: 5%;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   text-align: left;
   margin-top: 1%;
   padding-bottom: 1.5%;
