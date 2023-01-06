@@ -14,7 +14,7 @@ const Leaderboard = () => {
 
     // console.log(list.leaderboard);
     const settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 4,
@@ -27,7 +27,7 @@ const Leaderboard = () => {
               slidesToShow: 2,
               slidesToScroll: 2,
               infinite: true,
-              dots: true,
+              dots: false,
             },
           },
           {
@@ -56,39 +56,46 @@ const Leaderboard = () => {
             <div className="leaderboard-top">
                 <h1 className="leaderboard-title">Testimonials Leaderboard</h1>
                 <div className="leaderboard-top3">
+
                     <div className="leaderboard-second">
                         <div className="ldb-second-top">
                             <div className="second-posin"><div>2</div></div>
                             <div className="second-img-cont"><div className="second-img"></div></div>
                             <div className="second-testimonials"><div className="cont"><div>{second.votes}</div></div></div>
                         </div>
+                        
                         <div className="ldb-second-bottom">
-                            <div className="second-name" style={{fontSize: 29 ,fontWeight: 600}}>{second.name}</div>
+                            <div className="second-name" style={{fontSize: 27 ,fontWeight: 600}}>{second.name}</div>
                             <div className="second-branch-year" style={{fontSize: 16, fontWeight:400}}>{second.branch}<br/>{second.degree}{second.year}</div>
                         </div>
                     </div>
+
                     <div className="leaderboard-first">
                         <div className="ldb-first-top">
                             <div className="first-posin"><div>1</div></div>
                             <div className="first-img-cont"><div className="first-img"></div></div>
                             <div className="first-testimonials"><div className="cont"><div>{first.votes}</div></div></div>
                         </div>
+
                         <div className="ldb-first-bottom">
-                            <div className="first-name" style={{fontSize: 32 ,fontWeight: 600}}>{first.name}</div>
+                            <div className="first-name" style={{fontSize: 30 ,fontWeight: 600}}>{first.name}</div>
                             <div className="first-branch-year" style={{fontSize: 18, fontWeight:400}}>{first.branch}<br/>{first.degree}{first.year}</div>
                         </div>
                     </div>
+
                     <div className="leaderboard-third">
                         <div className="ldb-third-top">
                             <div className="third-posin"><div>3</div></div>
                             <div className="third-img-cont"><div className="third-img"></div></div>
                             <div className="third-testimonials"><div className="cont"><div>{third.votes}</div></div></div>
                         </div>
+
                         <div className="ldb-third-bottom">
-                            <div className="third-name" style={{fontSize: 24 ,fontWeight: 600}}>{third.name}</div>
-                            <div className="third-branch-year" style={{fontSize: 13.5, fontWeight:400}}>{third.branch}<br/>{third.degree}{third.year}</div>
+                            <div className="third-name" style={{fontSize: 23 ,fontWeight: 600}}>{third.name}</div>
+                            <div className="third-branch-year" style={{fontSize: 14.5, fontWeight:400}}>{third.branch}<br/>{third.degree}{third.year}</div>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div className="leaderboard-bottom">
@@ -102,8 +109,8 @@ const Leaderboard = () => {
                                         <div className="item-testimonials"><div className="cont"><div>{item.votes}</div></div></div>
                                     </div>
                                     <div className="ldb-item-bottom">
-                                        <div className="item-name" style={{fontSize: 19 ,fontWeight: 600}}>{item.name}</div>
-                                        <div className="item-branch-year" style={{fontSize: 12, fontWeight:400}}>{item.branch}<br/>{item.degree}{item.year}</div>
+                                        <div className="item-name" style={{fontSize: 21 ,fontWeight: 600}}>{item.name}</div>
+                                        <div className="item-branch-year" style={{fontSize: 14, fontWeight:400}}>{item.branch}<br/>{item.degree}{item.year}</div>
                                     </div>
                                 </div>
                                 )

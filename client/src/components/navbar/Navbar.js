@@ -2,6 +2,7 @@ import sail from '../../assets/navbar/sail.png';
 import yearbook from '../../assets/navbar/Links.png';
 import userImg from '../../assets/navbar/userImg.jpg';
 import menu from '../../assets/navbar/menu.png';
+import bell from'../../assets/navbar/bell.png';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 import { useState } from 'react';
@@ -31,7 +32,6 @@ const Navbar = () => {
                         <li><Link to="/testimonials">Testimonials</Link></li>
                         <li><Link to="/polls">Polls</Link></li>
                         <li><Link to="/leaderboard">Leaderboard</Link></li>
-                        <li><button className="nav-log-out nav-out">Log out</button></li>
                     </ul>
                 </div>
                 
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <path d="M13.9996 13.9996L11.0996 11.0996" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
-            <button className="nav-log-out nav-in">Log out</button>
+            <img src={bell} alt="bell" className="nav-bell" />
             <img src={userImg} alt="USER" className="nav-user-img" onClick={() => {
                 setUserClick(
                     (prev) => !prev
@@ -58,6 +58,7 @@ const Navbar = () => {
                     <ul>
                         <li><Link to="/myprofile">My Profile</Link></li>
                         <li><Link to="#">Hidden Testimonials</Link></li>
+                        <li><button className="nav-log-out nav-out">Log out</button></li>
                     </ul>
                 </div>
 
