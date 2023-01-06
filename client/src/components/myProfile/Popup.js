@@ -30,6 +30,7 @@ function Popup(){
 
     return(
         <div className='boxpp'>
+            <form>
             <div className="navpp">
                 <div className='headpp'>Edit Profile</div>
                 <button className='crosspp' type='button' onClick={()=>setpop(0)}>X</button>
@@ -37,8 +38,7 @@ function Popup(){
             <div className='picpp'>
                 <div className='picHead'>Upload new profile pic:</div>
                 <div className='picture'>
-                    <button className='file'>Choose file</button>
-                    <div className='picDetail'>no file selected</div>
+                    <input type="file" id="myFile" name="Choose file" />
                 </div>
             </div>
             <div className='mailpp'>
@@ -62,6 +62,7 @@ function Popup(){
                     Save Changes
                 </div>
             </button>
+        </form>
         </div>
     )
 }
