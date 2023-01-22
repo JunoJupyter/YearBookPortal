@@ -5,18 +5,21 @@ import Favourites from './Favourites';
 import { useState, useEffect, useRef } from 'react';
 
 function MyProfileTestimonials() {
+    const [search,setSeatch] = useState('');
+
     var temp = <ForYou />
     const [dis, setdis] = useState(0);
     switch (dis) {
-        case 0: temp = <ForYou />; break;
-        case 1: temp = <ByYou />; break;
-        case 2: temp = <Favourites />; break;
+        case 0: temp = <ForYou search={ search }/>; break;
+        case 1: temp = <ByYou search={ search }/>; break;
+        case 2: temp = <Favourites search={ search }/>; break;
         default: break;
     }
     const u1 = useRef()
     const u2 = useRef()
     const u3 = useRef()
     useEffect(() => {
+        // console.log(search);
         u1.current.className = ''
         u2.current.className = ''
         u3.current.className = ''
@@ -28,7 +31,7 @@ function MyProfileTestimonials() {
         }
         myFunction();
     }
-        , [dis])
+        , [dis,search])
     function myFunction() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "block") {
@@ -56,7 +59,7 @@ function MyProfileTestimonials() {
                 <div onClick={() => { if (dis !== 2) setdis(2) }} ref={u3}>Favourite</div>
             </div>
             <div className='MyProfileR_Search'>
-                <input className='ProfileR_Search_input' placeholder='Search Testimonial' />
+                <input className='ProfileR_Search_input' placeholder='Search Testimonial' onChange={e=>setSeatch(e.currentTarget.value)}/>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className='ProfileR_Search_input_i'><path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="#64748B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path><path d="M13.9996 13.9996L11.0996 11.0996" stroke="#64748B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
             </div>
             {temp}
