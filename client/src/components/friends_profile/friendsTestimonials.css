@@ -1,0 +1,34 @@
+.FT_right{
+    position: absolute;
+    width: 62%;
+    margin-right: 32px;
+    top: 90px;
+    left: 35%;
+    height: 100%;
+}
+.Heading_FT{
+    text-align: center;
+    margin-top: 8vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4vh;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3vh; 
+}
+.write_testimonial_FT{
+    margin-top: 5vh;
+}
+.text_FT{
+    width: 100%;
+    resize: none;
+    color: #808b9b;
+    font-size: 2.2vh;
+    height: 5vh;
+    padding-top: 1.5vh;
+}
+.text_FT:focus{
+    outline: none;
+}

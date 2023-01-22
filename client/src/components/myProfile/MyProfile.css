@@ -418,6 +418,9 @@ body::-webkit-scrollbar {
         align-items: center;
         height: 40px;
     }
+    .boxpp{
+        width: 50vw;
+    }
 }
 
 /* Style the navigation menu */
@@ -464,7 +467,8 @@ body::-webkit-scrollbar {
     font-style: normal;
     z-index: 2;
     visibility:hidden;
-    border-radius: 12px
+    border-radius: 12px;
+    box-shadow: 40px;
 }
 .navpp{
     display: flex;
@@ -524,6 +528,7 @@ body::-webkit-scrollbar {
     margin-top: 2vh;
 }
 .picInput, .nameInput, .mailInput, .phoneInput, .addressInput, .bioInput{
+    padding-left: 5px;
     margin-left: 3vw;
     margin-right: 3vw;
     width: 24vw;

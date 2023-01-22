@@ -58,7 +58,7 @@ const Navbar = () => {
                     <ul>
                         <li><Link to="/myprofile">My Profile</Link></li>
                         <li><Link to="#">Hidden Testimonials</Link></li>
-                        <li><button className="nav-log-out nav-out">Log out</button></li>
+                        <li><Link to="/">Log Out</Link></li>
                     </ul>
                 </div>
 
