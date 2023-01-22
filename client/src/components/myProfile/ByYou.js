@@ -1,11 +1,17 @@
 import React from "react";
 import list from "../../database/testimonial.json";
 
-function ByYou() {
+function ByYou(search) {
+  let filteredData = () => {
+    return list.data.filter(x => Object.values(x)
+     .join(' ')
+     .toLowerCase()
+     .includes(search.search.toLowerCase()))
+    }
   return (
     <div className="MyProfileR_c">
       <div className="MyProfileR_c_a">
-        {list.data.map((e) => {
+        {filteredData().map((e) => {
           return (
             <React.Fragment key={e.id}>
               <div className="MyProfileR_card">
