@@ -27,8 +27,20 @@
     color: #808b9b;
     font-size: 2.2vh;
     height: 5vh;
-    padding-top: 1.5vh;
+    padding-top: 1.8vh;
+    padding-left: 1vw;
 }
 .text_FT:focus{
     outline: none;
+}
+@media only screen and (max-width: 1000px){
+    body{
+        height: auto;
+    }
+    .FT_right{
+        position: relative;
+        width: 93%;
+        left: 4vw;
+        top: -4vh;
+    }
 }
