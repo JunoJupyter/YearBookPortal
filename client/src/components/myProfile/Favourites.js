@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import list from '../../database/testimonial.json'
 
 function Favourites(search) {
@@ -16,7 +17,9 @@ function Favourites(search) {
               <React.Fragment key={e.id}>
                 <div className='MyProfileR_card' >
                   <div className='MyProfileR_card_image'>
-                    <img alt='' src={require('../../assets/myprofile/index2.jpeg')} className='MyProfileR_card_img' />
+                  <Link to='/friendprofile'>
+                      <img alt="" src={require('../../assets/myprofile/index.jpeg')} className='MyProfileR_card_img' />
+                  </Link>
                   </div>
                   <div className='MyProfileR_card_detail'>
                     <div className='MyProfileR_card_card_name'>

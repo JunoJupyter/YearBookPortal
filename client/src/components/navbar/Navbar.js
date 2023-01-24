@@ -3,6 +3,7 @@ import yearbook from '../../assets/navbar/Links.png';
 import userImg from '../../assets/navbar/userImg.jpg';
 import menu from '../../assets/navbar/menu.png';
 import bell from'../../assets/navbar/bell.png';
+import down from '../../assets/navbar/down.png'
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 import { useState } from 'react';
@@ -45,12 +46,21 @@ const Navbar = () => {
                 </svg>
             </div>
             <img src={bell} alt="bell" className="nav-bell" />
-            <img src={userImg} alt="USER" className="nav-user-img" onClick={() => {
-                setUserClick(
-                    (prev) => !prev
-                );
-                setOpenMenu(false)
-            }}  />
+            <div className='profile_nav'>
+                <img src={userImg} alt="USER" className="nav-user-img" onClick={() => {
+                    
+                    setUserClick(
+                        (prev) => !prev
+                    );
+                    setOpenMenu(false)
+                }}/>
+                <img src={down} alt="" className='down_ham' onClick={() => {
+                    setUserClick(
+                        (prev) => !prev
+                    );
+                    setOpenMenu(false)
+                }}/>
+            </div>
             {
 
                 userClick &&
@@ -58,11 +68,12 @@ const Navbar = () => {
                     <ul>
                         <li><Link to="/myprofile">My Profile</Link></li>
                         <li><Link to="#">Hidden Testimonials</Link></li>
-                        <li><button className="nav-log-out nav-out">Log out</button></li>
+                        <li><Link to="/">Log Out</Link></li>
                     </ul>
                 </div>
-
+                
             }
+            
             <img src={menu} alt="" className="nav-menu" onClick={() => {
                 setOpenMenu(
                     (prev) => !prev
