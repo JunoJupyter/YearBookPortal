@@ -6,16 +6,21 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Homepage() {
-  let [data, setData] = useState(null);
+  let [datas, setDatas] = useState(null);
   let [isPending, setIsPending] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/announcements")
+    fetch("http://localhost:8000/api/announcements/", {
+      method: "GET",
+      headers: {
+        'Accept': 'application/json'
+      },
+    })
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        setData(data);
+        setDatas(data);
         setIsPending(false);
         
       });
@@ -32,11 +37,11 @@ function Homepage() {
         <h2>Announcement</h2>
         <div className="para">
           {isPending && <div>Loading.....</div>}
-          {data &&
-            data.map((data) => (
-              <div key={data.id} className="databody">
-                {data.id}. {data.body}
-                <img src={MegaphoneIcon} alt="" className="megaphoneicon" />
+          {datas &&
+            datas.map((data) => (
+              <div key={data['id']} className="databody">
+                {data['id']}. {data['content']}
+                {data['important'] ? <img src={MegaphoneIcon} alt="" className="megaphoneicon" /> : <></>}
               </div>
             ))}
         </div>
